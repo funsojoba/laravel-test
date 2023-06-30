@@ -21,3 +21,5 @@ Route::get('/', function () {
 
 Route::get('/login', 'App\Http\Controllers\ClassController@index');
 Route::get("/login/{id}", 'App\Http\Controllers\ClassController@show');
+Route::get("/form", 'App\Http\Controllers\ClassController@getForm');
+Route::post("/form", 'App\Http\Controllers\ClassController@store');
